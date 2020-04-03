@@ -1,0 +1,107 @@
+header {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    &__logo {
+      img {
+        height: 50px;
+      }
+    }
+
+    &__contacts {
+      padding: 0 0;
+
+      &_phone {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 0 0 0;
+      }
+
+      &_time {
+        font-weight: 400;
+      }
+    }
+
+    &__callback {
+      margin-top: -10px;
+
+      &_button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: fit-content;
+        border: 2px solid @green;
+        border-radius: 5px;
+        color: @green;
+        font-weight: 600;
+        transition: all 0.3s;
+
+        &:hover {
+          text-decoration: none;
+          background-color: @green;
+          color: @white;
+        }
+      }
+
+      &_social {
+        width: fit-content;
+        margin: 10px auto;
+
+        img {
+          height: 20px;
+        }
+
+        a {
+          margin: 0 10px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  background-color: @green;
+
+  &__aligner {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ul {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    box-sizing: content-box;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+
+      a {
+        display: block;
+        color: @white;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s;
+
+        &:hover {
+          text-decoration: none;
+          background-color: @green-light;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header__contacts {
+    margin: 20px 0;
+  }
+
+}
