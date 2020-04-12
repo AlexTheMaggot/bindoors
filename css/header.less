@@ -24,16 +24,15 @@ header {
     }
 
     &__callback {
-      margin-top: -10px;
 
       &_button {
         display: block;
         margin: 0 auto;
         padding: 10px 20px;
         width: fit-content;
-        border: 2px solid @green;
         border-radius: 5px;
-        color: @green;
+        color: @gray-dark;
+        background-color: @orange;
         font-weight: 600;
         transition: all 0.3s;
 
@@ -48,12 +47,15 @@ header {
         width: fit-content;
         margin: 10px auto;
 
-        img {
-          height: 20px;
-        }
-
         a {
           margin: 0 10px;
+          color: @gray;
+          &:hover {
+            color: @green;
+          }
+          i {
+            font-size: 1.5rem;
+          }
 
           &:hover {
             text-decoration: none;
@@ -71,6 +73,10 @@ header {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+    nav {
+      width: fit-content;
+      margin: 0 auto;
+    }
   }
 
   ul {
