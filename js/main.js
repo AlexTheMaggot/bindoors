@@ -105,3 +105,10 @@ $(".close-modal_modal").on('click', function (e) {
     }, 350);
 
 });
+
+$('a[href^="#"]').click(function (e) {
+    e.preventDefault();
+    const elementClick = $(this).attr("href");
+    const destination = $(elementClick).offset().top;
+    $('html').animate({scrollTop: destination}, 1000);
+});

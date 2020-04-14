@@ -9,18 +9,23 @@
     <title>Главная</title>
 </head>
 <body>
+<!--TODO: Сделать Адаптив-->
 <header>
     <div class="container header">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-12 header__logo">
-                <div class="text-md-right text-center">
+                <div class="text-md-left text-center">
                     <a href="/">
                         <img src="img/logo.svg" alt="">
                     </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-12 header__contacts">
-                <p class="text-lg-center text-md-right text-center header__contacts_phone">+7 (977) 564-08-83</p>
+                <div class="text-center">
+                    <a href="tel:+79775640883" class="header__contacts_phone text-lg-center text-md-right text-center">
+                        <p>+7 (977) 564-08-83</p>
+                    </a>
+                </div>
                 <p class="text-lg-center text-md-right text-center header__contacts_time">С 10:00 до 20:00</p>
             </div>
             <div class="col-lg-4 col-md-4 col-12 header__callback">
@@ -46,18 +51,19 @@
     <div class="container-fluid menu">
         <div class="row">
             <div class="menu__aligner">
+                <!--                TODO: Сделать гамбургер-->
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">О нас</a>
+                            <a href="#about">О нас</a>
                         <li>
-                            <a href="#">Наши Партнеры</a>
+                            <a href="#partners">Наши Партнеры</a>
                         <li>
-                            <a href="#">Наши проекты</a>
+                            <a href="#projects">Наши проекты</a>
                         <li>
-                            <a href="#">Отзывы</a>
+                            <a href="#reviews">Отзывы</a>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="#contacts">Контакты</a>
                     </ul>
                 </nav>
             </div>
@@ -66,59 +72,67 @@
 </header>
 <main>
     <div class="container-fluid">
-        <div class="row fw">
-            <!--            TODO: Изменить фон-->
-            <!--            TODO: Изменить количество моделей-->
-            <div class="col-12 fw__title">
-                <h1 class="text-center">
-                    Продажа и установка входных и межкомнатных дверей в квартирах, домах и
-                    офисах
-                </h1>
-            </div>
-            <div class="col-xl-6 col-lg-4 col-12 fw__features">
+        <div class="row fw" id="about">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <p>Добро пожаловать на главную страницу Bindoors.ru – компании по продаже и установке входных и
-                            межкомнатных дверей в квартирах, домах и офисах!</p>
-                        <p>Мы успешно работаем на рынке входных и межкомнатных дверей более 12 лет, за это время
-                            выполнили более 1000 проектов различной сложности.</p>
-                        <p>Позвоните нам или оставьте заявку на обратный звонок, и мы бесплатно проконсультируем Вас по
-                            вопросам приобретения и установки входных и межкомнатных дверей в Вашей квартире, доме или
-                            офисе.</p>
+                    <!--    TODO: Изменить количество моделей-->
+                    <div class="col-12 fw__title">
+                        <h1 class="text-center">
+                            Продажа и установка входных и межкомнатных дверей в квартирах, домах и
+                            офисах
+                        </h1>
+                    </div>
+                    <div class="col-xl-6 col-lg-4 col-12 fw__features">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <p>Добро пожаловать на главную страницу Bindoors.ru – компании по продаже и установке
+                                    входных и
+                                    межкомнатных дверей в квартирах, домах и офисах!</p>
+                                <p>Мы успешно работаем на рынке входных и межкомнатных дверей более 12 лет, за это время
+                                    выполнили более 1000 проектов различной сложности.</p>
+                                <p>Позвоните нам или оставьте заявку на обратный звонок, и мы бесплатно проконсультируем
+                                    Вас по
+                                    вопросам приобретения и установки входных и межкомнатных дверей в Вашей квартире,
+                                    доме или
+                                    офисе.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                                <div class="fw__features_feature">
+                                    <img src="img/door-min.png" alt="">
+                                    <!--                            TODO: Переделать иконку (фон)-->
+                                    <p>Более 10 000 моделей дверей на выбор</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                                <div class="fw__features_feature">
+                                    <img src="img/warranty-min.png" alt="">
+                                    <p>Гарантия качества</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                                <div class="fw__features_feature">
+                                    <img src="img/quality-min.png" alt="">
+                                    <p>Сотрудничество с лучшими производителями</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                                <div class="fw__features_feature">
+                                    <img src="img/great-min.png" alt="">
+                                    <p>500+ довольных клиентов</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 fw__button">
+                        <a href="#" class="open-modal_modal" data-modal_modal="#modal_modal2">Отправить заявку на
+                            каталог и
+                            прайс</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                        <div class="fw__features_feature">
-                            <img src="img/door-min.png" alt="">
-                            <p>Более 10 000 моделей дверей на выбор</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                        <div class="fw__features_feature">
-                            <img src="img/warranty-min.png" alt="">
-                            <p>Гарантия качества</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                        <div class="fw__features_feature">
-                            <img src="img/quality-min.png" alt="">
-                            <p>Сотрудничество с лучшими производителями</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                        <div class="fw__features_feature">
-                            <img src="img/great-min.png" alt="">
-                            <p>500+ довольных клиентов</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 fw__button">
-                <a href="#" class="open-modal_modal" data-modal_modal="#modal_modal2">Отправить заявку на каталог и
-                    прайс</a>
             </div>
         </div>
         <div class="row sw">
@@ -225,7 +239,7 @@
                 <div class="sw_ftpb sw__button hidden">Назад</div>
             </div>
         </div>
-        <div class="row partners">
+        <div class="row partners" id="partners" name="partners">
             <div class="col-12">
                 <h2 class="partners__title text-center">Наши партнеры</h2>
             </div>
@@ -257,8 +271,8 @@
                 </div>
             </div>
         </div>
-        <div class="row tw">
-            <!--            TODO: Украсить текст анимациями-->
+        <div class="row tw" id="projects">
+            <!--            TODO: Сделать увеличение каждой фотографии отдельно-->
             <div class="col-xl-12">
                 <h1 class="text-center">Наши работы</h1>
             </div>
@@ -268,7 +282,7 @@
                      data-swipe="true">
                     <div class="ft__slide fotorama__select">
                         <div class="row">
-                            <div class="col-xl-8 col-12">
+                            <div class="col-xl-7 col-12">
                                 <script>
                                     $('.ft_img').on("click", function () {
                                         $('.image-fullscreen').removeClass('hidden');
@@ -279,52 +293,74 @@
                                 </script>
                                 <img src="img/slide1.jpg" alt="" class="ft_img">
                             </div>
-                            <div class="col-xl-3 col-12 ft__slide_mats d-xl-block d-none">
-                                <p><span>Объект: </span>квартира</p>
-                                <p><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p><span>Задача: </span>необходимо было установить 5 межкомнатных дверей в частной
+                            <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
+                                <p class="mats__object"><span>Объект: </span>квартира</p>
+                                <p class="mats__address"><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
+                                <p class="mats__date"><span>Дата монтажа: </span>март 2020 г.</p>
+                                <p class="mats__task"><span>Задача: </span>необходимо было установить 5 межкомнатных
+                                    дверей в частной
                                     квартире</p>
-                                <p><span>Выполненные работы: </span>провели предварительный замер, расчет и установку
+                                <p class="mats__jobs"><span>Выполненные работы: </span>провели предварительный замер,
+                                    расчет и установку
                                     дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
                                     компании Vantage</p>
-                                <p><span>Общая стоимость проекта: </span>________ рублей</p>
+                                <p class="mats__price"><span>Общая стоимость проекта: </span>________ рублей</p>
                             </div>
                         </div>
                     </div>
                     <div class="ft__slide fotorama__select">
                         <div class="row">
-                            <div class="col-xl-8 col-12">
-                                <img src="img/slide1.jpg" alt="">
+                            <div class="col-xl-7 col-12">
+                                <script>
+                                    $('.ft_img').on("click", function () {
+                                        $('.image-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                </script>
+                                <img src="img/slide1.jpg" alt="" class="ft_img">
                             </div>
-                            <div class="col-xl-3 col-12 ft__slide_mats d-xl-block d-none">
-                                <p><span>Объект: </span>квартира</p>
-                                <p><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p><span>Задача: </span>необходимо было установить 5 межкомнатных дверей в частной
+                            <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
+                                <p class="mats__object"><span>Объект: </span>квартира</p>
+                                <p class="mats__address"><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
+                                <p class="mats__date"><span>Дата монтажа: </span>март 2020 г.</p>
+                                <p class="mats__task"><span>Задача: </span>необходимо было установить 5 межкомнатных
+                                    дверей в частной
                                     квартире</p>
-                                <p><span>Выполненные работы: </span>провели предварительный замер, расчет и установку
+                                <p class="mats__jobs"><span>Выполненные работы: </span>провели предварительный замер,
+                                    расчет и установку
                                     дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
                                     компании Vantage</p>
-                                <p><span>Общая стоимость проекта: </span>________ рублей</p>
+                                <p class="mats__price"><span>Общая стоимость проекта: </span>________ рублей</p>
                             </div>
                         </div>
                     </div>
                     <div class="ft__slide fotorama__select">
                         <div class="row">
-                            <div class="col-xl-8 col-12">
-                                <img src="img/slide1.jpg" alt="">
+                            <div class="col-xl-7 col-12">
+                                <script>
+                                    $('.ft_img').on("click", function () {
+                                        $('.image-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                </script>
+                                <img src="img/slide1.jpg" alt="" class="ft_img">
                             </div>
-                            <div class="col-xl-3 col-12 ft__slide_mats d-xl-block d-none">
-                                <p><span>Объект: </span>квартира</p>
-                                <p><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p><span>Задача: </span>необходимо было установить 5 межкомнатных дверей в частной
+                            <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
+                                <p class="mats__object"><span>Объект: </span>квартира</p>
+                                <p class="mats__address"><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
+                                <p class="mats__date"><span>Дата монтажа: </span>март 2020 г.</p>
+                                <p class="mats__task"><span>Задача: </span>необходимо было установить 5 межкомнатных
+                                    дверей в частной
                                     квартире</p>
-                                <p><span>Выполненные работы: </span>провели предварительный замер, расчет и установку
+                                <p class="mats__jobs"><span>Выполненные работы: </span>провели предварительный замер,
+                                    расчет и установку
                                     дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
                                     компании Vantage</p>
-                                <p><span>Общая стоимость проекта: </span>________ рублей</p>
+                                <p class="mats__price"><span>Общая стоимость проекта: </span>________ рублей</p>
                             </div>
                         </div>
                     </div>
@@ -393,33 +429,37 @@
 
         <!-- Комментарии -->
 
-        <div class="reviews row">
-            <!--            TODO: Сделать один отзыв и карусель-->
+        <div class="reviews row justify-content-center" id="reviews">
+            <!--            TODO: Переписать код-->
             <div class="col-12">
                 <h2 class="reviews__header">Что говорят наши клиенты?</h2>
             </div>
             <div class="col-xl-6">
-                <div class="reviews__review review">
-                    <div class="review__name">
-                        <img src="img/review1.jpg" alt="">
-                        <p>Сергей Сеськин</p>
+                <div style="width: 500px; margin: 0 auto">
+                    <div class="fotorama" data-arrows="false" data-nav="false">
+                        <div class="reviews__review review">
+                            <div class="review__name">
+                                <img src="img/review1.jpg" alt="">
+                                <p>Сергей Сеськин</p>
+                            </div>
+                            <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
+                                дверей
+                                и цена. Компания
+                                выполняет все услуги, что очень удобно. Привезли и установили в обговорённый срок.
+                                Рекомендую!"</p>
+                        </div>
+                        <div class="reviews__review review">
+                            <div class="review__name">
+                                <img src="img/review1.jpg" alt="">
+                                <p>Сергей Сеськин</p>
+                            </div>
+                            <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
+                                дверей
+                                и цена. Компания
+                                выполняет все услуги, что очень удобно. Привезли и установили в обговорённый срок.
+                                Рекомендую!"</p>
+                        </div>
                     </div>
-                    <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество дверей
-                        и цена. Компания
-                        выполняет все услуги, что очень удобно. Привезли и установили в обговорённый срок.
-                        Рекомендую!"</p>
-                </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="reviews__review review">
-                    <div class="review__name">
-                        <img src="img/review1.jpg" alt="">
-                        <p>Сергей Сеськин</p>
-                    </div>
-                    <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество дверей
-                        и цена. Компания
-                        выполняет все услуги, что очень удобно. Привезли и установили в обговорённый срок.
-                        Рекомендую!"</p>
                 </div>
             </div>
             <div class="col-12">
@@ -431,13 +471,12 @@
     </div>
 </main>
 <footer>
-    <!--    TODO: Подкорректировать нижний текст-->
     <!--    TODO: Подкорректировать иконки соц-сетей-->
     <!--    TODO: Поменять акцию на подписку-->
     <!--    TODO: Вставить текст вместо рыбы-->
     <div class="footer-top">
         <div class="container">
-            <div class="row">
+            <div class="row" id="contacts">
                 <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
                     <h3>Bindoors</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita totam exercitationem doloribus

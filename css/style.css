@@ -12,16 +12,24 @@ header .header__contacts {
   padding: 0 0;
 }
 header .header__contacts_phone {
+  display: block;
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0 0 0 0;
+  width: fit-content;
+  margin: 0 auto;
+  color: #000000;
+  transition: all 0.3s;
+}
+header .header__contacts_phone:hover {
+  text-decoration: none;
+  transform: scale(1.1) translate(0, 5px);
 }
 header .header__contacts_time {
   font-weight: 400;
 }
 header .header__callback_button {
   display: block;
-  margin: 0 auto;
+  margin: 0  0 0 auto;
   padding: 10px 20px;
   width: fit-content;
   border-radius: 5px;
@@ -37,7 +45,7 @@ header .header__callback_button:hover {
 }
 header .header__callback_social {
   width: fit-content;
-  margin: 10px auto;
+  margin: 10px 0 10px auto;
 }
 header .header__callback_social a {
   margin: 0 10px;
@@ -179,9 +187,9 @@ footer .segment-four form input[type=submit] {
   text-transform: uppercase;
 }
 footer .footer-bottom-text {
+  padding: 10px 0;
   text-align: center;
   background: #000;
-  line-height: 75px;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -209,7 +217,7 @@ footer .footer-bottom-text {
   padding: 30px 0;
 }
 .fw__title {
-  margin: 30px 0;
+  margin: 0 0 10px 0;
 }
 .fw__features p {
   line-height: 30px;
@@ -245,7 +253,7 @@ footer .footer-bottom-text {
 }
 .fw__button a {
   display: block;
-  margin: 30px auto 0 auto;
+  margin: 10px auto 0 auto;
   padding: 10px 20px;
   width: fit-content;
   border-radius: 5px;
@@ -355,15 +363,14 @@ footer .footer-bottom-text {
   padding: 30px 0;
 }
 .tw .ft__slide img {
-  max-width: 800px;
   width: 100%;
   display: block;
-  margin: 10px auto;
+  margin: 10px 0 10px 50px;
   transition: all 0.3s;
 }
 .tw .ft__slide img:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .tw .ft__slide_title {
   font-size: 1.5rem;
@@ -372,8 +379,54 @@ footer .footer-bottom-text {
 .tw .ft__slide_mats {
   padding-top: 15px;
 }
-.tw .ft__slide_mats span {
+.tw .ft__slide_mats p {
+  display: block;
+  width: fit-content;
+  margin-left: 80px;
+  margin-right: 60px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFFFFF;
+  transition: all 0.3s;
+}
+.tw .ft__slide_mats p::before {
+  content: '';
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+.tw .ft__slide_mats p:hover {
+  border-bottom: 2px solid #68952D;
+}
+.tw .ft__slide_mats p span {
   font-weight: 600;
+}
+.tw .ft__slide_mats .mats__object::before {
+  background: url("../img/home.png") center no-repeat;
+  background-size: contain;
+}
+.tw .ft__slide_mats .mats__address::before {
+  background: url("../img/geo.png") center no-repeat;
+  background-size: contain;
+}
+.tw .ft__slide_mats .mats__date::before {
+  background: url("../img/calendar.png") center no-repeat;
+  background-size: contain;
+}
+.tw .ft__slide_mats .mats__task::before {
+  background: url("../img/pencil.png") center no-repeat;
+  background-size: contain;
+}
+.tw .ft__slide_mats .mats__jobs::before {
+  background: url("../img/check.png") center no-repeat;
+  background-size: contain;
+}
+.tw .ft__slide_mats .mats__price::before {
+  background: url("../img/money.png") center no-repeat;
+  background-size: contain;
 }
 .tw .tw_button__catandprice {
   display: block;

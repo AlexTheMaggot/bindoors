@@ -13,7 +13,7 @@
   padding: 30px 0;
 
   &__title {
-    margin: 30px 0;
+    margin: 0 0 10px 0;
   }
 
   &__features {
@@ -59,7 +59,7 @@
   &__button {
     a {
       display: block;
-      margin: 30px auto 0 auto;
+      margin: 10px auto 0 auto;
       padding: 10px 20px;
       width: fit-content;
       border-radius: 5px;
@@ -191,14 +191,14 @@
   .ft {
     &__slide {
       img {
-        max-width: 800px;
         width: 100%;
         display: block;
-        margin: 10px auto;
+        margin: 10px 0 10px 50px;
         transition: all 0.3s;
+
         &:hover {
           cursor: pointer;
-          transform: scale(1.05);
+          transform: scale(1.03);
         }
       }
 
@@ -210,12 +210,68 @@
       &_mats {
         padding-top: 15px;
 
-        span {
-          font-weight: 600;
+        p {
+          display: block;
+          width: fit-content;
+          margin-left: 80px;
+          margin-right: 60px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid @white;
+          transition: all 0.3s;
+
+          &::before {
+            content: '';
+            margin-left: 50px;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            background-position: center;
+            background-size: cover;
+          }
+
+          &:hover {
+            border-bottom: 2px solid @green;
+          }
+
+          span {
+            font-weight: 600;
+          }
+        }
+
+        .mats__object::before {
+          background: url("../img/home.png") center no-repeat;
+          background-size: contain;
+        }
+
+        .mats__address::before {
+          background: url("../img/geo.png") center no-repeat;
+          background-size: contain;
+        }
+
+        .mats__date::before {
+          background: url("../img/calendar.png") center no-repeat;
+          background-size: contain;
+        }
+
+        .mats__task::before {
+          background: url("../img/pencil.png") center no-repeat;
+          background-size: contain;
+        }
+
+        .mats__jobs::before {
+          background: url("../img/check.png") center no-repeat;
+          background-size: contain;
+        }
+
+        .mats__price::before {
+          background: url("../img/money.png") center no-repeat;
+          background-size: contain;
         }
       }
     }
   }
+
 
   .tw_button__catandprice {
     display: block;
@@ -233,6 +289,7 @@
       color: @white;
     }
   }
+
 }
 
 .frw {
@@ -680,6 +737,7 @@
   border-radius: 50px;
   border: 2px solid @white;
   transition: all 0.3s;
+
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -689,6 +747,7 @@
 .hidden {
   display: none;
 }
+
 .notrans {
   opacity: 1;
 }
