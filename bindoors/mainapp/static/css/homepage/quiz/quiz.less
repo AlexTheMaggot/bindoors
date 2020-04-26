@@ -1,0 +1,56 @@
+.quiz {
+  background-color: @green;
+  &__input {
+    display: none;
+    &:checked + .quiz__label {
+      background-color: @white;
+      color: @green;
+    }
+  }
+  &__label {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 10px 0;
+    color: @white;
+    font-size: 1rem;
+    border: 2px solid @white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-align: center;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  &__item {
+    margin: 0;
+  }
+  &__1 {
+    transition: all 0.5s;
+  }
+  &__2 {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &__3 {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &__4 {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+    &_desc {
+      color: @white;
+      margin-top: 30px;
+    }
+  }
+  &__5 {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+}
