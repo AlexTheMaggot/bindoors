@@ -1,20 +1,18 @@
 @media (min-width: 768px) {
   .reviews {
+    &__slider {
+      max-width: none;
+      width: 600px;
+    }
     &__review {
-      max-width: 85%;
       width: 500px;
+      max-width: none;
     }
-
     &__img {
-      float: left;
+      margin: 0;
     }
-
     &__text {
-      float: right;
-    }
-
-    .fotorama__stage {
-      height: 300px;
+      margin-left: -30px;
     }
   }
 }
