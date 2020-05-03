@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project
+from .models import Project, Partner, Review
 
 
 # Register your models here.
@@ -10,3 +10,15 @@ class ProjectConfig(admin.ModelAdmin):
     list_display = ('object', 'address', 'price',)
 
 admin.site.register(Project, ProjectConfig)
+
+class PartnerConfig(admin.ModelAdmin):
+    fields = ('name', 'img',)
+    list_display = ('name',)
+
+admin.site.register(Partner, PartnerConfig)
+
+class ReviewConfig(admin.ModelAdmin):
+    fields = ('name', 'city', 'img', 'text',)
+    list_display = ('name',)
+
+admin.site.register(Review, ReviewConfig)

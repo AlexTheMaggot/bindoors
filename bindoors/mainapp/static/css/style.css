@@ -311,9 +311,10 @@ header .callback__social-item:hover {
   display: none;
   opacity: 0;
   transition: all 0.3s;
+  text-align: center;
 }
 .quiz__prev {
-  display: block;
+  display: inline-block;
   width: fit-content;
   margin: 10px auto 0 auto;
   border: 2px solid #FFFFFF;
@@ -339,11 +340,12 @@ header .callback__social-item:hover {
   margin-top: 30px;
 }
 .quiz__desc_title {
+  margin-top: -20px;
   font-size: 1rem;
 }
 .quiz__mail {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 50%;
   min-width: 300px;
   color: #FFFFFF;
@@ -366,7 +368,7 @@ header .callback__social-item:hover {
 .quiz__submit {
   background-color: #FFFFFF;
   margin: 10px auto 0 auto;
-  display: block;
+  display: inline-block;
 }
 .quiz__agreement {
   margin-top: 10px;
@@ -381,10 +383,10 @@ header .callback__social-item:hover {
   .quiz__label {
     font-size: 1.5rem;
     max-width: none;
-    width: 370px;
+    width: 350px;
   }
   .quiz__img {
-    height: 150px;
+    height: 250px;
   }
 }
 @media (min-width: 992px) {
@@ -611,6 +613,10 @@ header .callback__social-item:hover {
 .order__input {
   margin: 0 auto 10px auto;
   width: 50%;
+}
+.order__agreement {
+  margin: 0 auto;
+  width: fit-content;
 }
 .order__button {
   display: block;
@@ -976,31 +982,48 @@ header .callback__social-item:hover {
   width: 100%;
   max-width: 400px;
 }
-.modal_modal .mod_btn {
-  display: inline-block;
-  width: fit-content;
-  padding: 10px 30px;
-  border-radius: 5px;
-  color: #FFFFFF;
-  transition: all 0.3s;
-}
-.modal_modal .mod_btn:hover {
-  text-decoration: none;
-  color: #FFFFFF;
-}
 .modal_modal .button_send {
   margin: 40px auto 0 auto;
   background-color: #68952D;
+  color: #FFFFFF;
 }
 .modal_modal .button_send:hover {
   background-color: #3D610F;
 }
 .modal_modal .button_cancel {
+  color: #FFFFFF;
   background-color: #555555;
-  margin: 10px auto 0 auto;
+  margin: 40px auto 0 auto;
 }
 .modal_modal .button_cancel:hover {
   background-color: #333333;
+}
+.wrong_red::-webkit-input-placeholder {
+  color: #FF0000;
+  font-weight: 600;
+}
+.wrong_red::-moz-placeholder {
+  color: #FF0000;
+  font-weight: 600;
+}
+.wrong_move {
+  animation: wrong;
+  animation-duration: 100ms;
+  animation-timing-function: ease;
+}
+@keyframes wrong {
+  from {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(10px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 @media (min-width: 576px) {
   .modal_modal {

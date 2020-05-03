@@ -28,3 +28,25 @@ class Project(models.Model):
     class Meta:
         verbose_name = 'Проект'
         verbose_name_plural = 'Проекты'
+
+class Partner(models.Model):
+    name = models.CharField(verbose_name='Название', max_length=200)
+    img = models.ImageField(verbose_name='Изображение', upload_to='static/img/partner_img/')
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Партнер'
+        verbose_name_plural = 'Партнеры'
+
+class Review(models.Model):
+    name = models.CharField(verbose_name='Имя', max_length=200)
+    city = models.CharField(verbose_name='Город', max_length=200)
+    img = models.ImageField(verbose_name='Фотография', upload_to='static/img/review_img/')
+    text = models.TextField(verbose_name='Текст отзыва')
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзывы'

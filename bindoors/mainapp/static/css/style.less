@@ -64,24 +64,10 @@
     max-width: 400px;
   }
 
-  .mod_btn {
-    display: inline-block;
-    width: fit-content;
-    padding: 10px 30px;
-    border-radius: 5px;
-    color: @white;
-    transition: all 0.3s;
-
-    &:hover {
-      text-decoration: none;
-      color: @white;
-
-    }
-  }
-
   .button_send {
     margin: 40px auto 0 auto;
     background-color: @green;
+    color: @white;
 
     &:hover {
       background-color: @green-dark;
@@ -89,8 +75,9 @@
   }
 
   .button_cancel {
+    color: @white;
     background-color: @gray;
-    margin: 10px auto 0 auto;
+    margin: 40px auto 0 auto;
 
     &:hover {
       background-color: @gray-dark;
@@ -98,12 +85,46 @@
   }
 }
 
+.wrong_red::-webkit-input-placeholder {
+  color: #FF0000;
+  font-weight: 600;
+}
+
+.wrong_red::-moz-placeholder {
+  color: #FF0000;
+  font-weight: 600;
+}
+
+.wrong_move {
+  animation: wrong;
+  animation-duration: 100ms;
+  animation-timing-function: ease;
+}
+
+@keyframes wrong {
+  from {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(10px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(0);
+  }
+
+}
+
 @media (min-width: 576px) {
   .modal_modal {
     padding: 40px 80px;
+
     .title {
       font-size: 1.5rem;
     }
+
     .mod_inputs {
       width: 70%;
     }
