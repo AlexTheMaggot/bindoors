@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Project(models.Model):
@@ -29,9 +30,11 @@ class Project(models.Model):
         verbose_name = 'Проект'
         verbose_name_plural = 'Проекты'
 
+
 class Partner(models.Model):
     name = models.CharField(verbose_name='Название', max_length=200)
     img = models.ImageField(verbose_name='Изображение', upload_to='static/img/partner_img/')
+
     def __str__(self):
         return self.name
 
@@ -39,14 +42,86 @@ class Partner(models.Model):
         verbose_name = 'Партнер'
         verbose_name_plural = 'Партнеры'
 
+
 class Review(models.Model):
     name = models.CharField(verbose_name='Имя', max_length=200)
     city = models.CharField(verbose_name='Город', max_length=200)
     img = models.ImageField(verbose_name='Фотография', upload_to='static/img/review_img/')
     text = models.TextField(verbose_name='Текст отзыва')
+
     def __str__(self):
         return self.name
 
     class Meta:
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзывы'
+
+
+class Recall(models.Model):
+    name = models.CharField(verbose_name='Имя', max_length=200)
+    phone = models.CharField(verbose_name='Телефон', max_length=10)
+    date = models.DateTimeField(verbose_name='Дата', auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Заявка на обратный звонок'
+        verbose_name_plural = 'Заявки на обратный звонок'
+
+
+class SendCatalog(models.Model):
+    mail = models.CharField(verbose_name='Почта', max_length=200)
+    date = models.DateTimeField(verbose_name='Дата', auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.mail
+
+    class Meta:
+        verbose_name = 'Заявка на каталог'
+        verbose_name_plural = 'Заявки на каталог'
+
+
+class SendCatandprice(models.Model):
+    name = models.CharField(verbose_name='Имя', max_length=200)
+    phone = models.CharField(verbose_name='Телефон', max_length=200)
+    mail = models.CharField(verbose_name='Почта', max_length=200)
+    date = models.DateTimeField(verbose_name='Дата', auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Заявка на котолог и прайс'
+        verbose_name_plural = 'Заявки на каталог и прайс'
+
+
+class Quiz(models.Model):
+    door_type = models.CharField(verbose_name='Тип двери', max_length=200)
+    price_type = models.CharField(verbose_name='Ценовой сегмент', max_length=200)
+    style_type = models.CharField(verbose_name='Стиль', max_length=200)
+    size_type = models.CharField(verbose_name='Размер', max_length=200)
+    material_type = models.CharField(verbose_name='Материал', max_length=200)
+    name = models.CharField(verbose_name='Имя', max_length=200)
+    phone = models.CharField(verbose_name='Телефон', max_length=200)
+    mail = models.CharField(verbose_name='Почта', max_length=200)
+    date = models.DateTimeField(verbose_name='Дата', auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Заявка с квиза'
+        verbose_name_plural = 'Заявки с квиза'
+
+
+class Subscribe(models.Model):
+    mail = models.CharField(verbose_name='Почта', max_length=200)
+    date = models.DateTimeField(verbose_name='Дата', auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.mail
+
+    class Meta:
+        verbose_name = 'Заявка на подписку'
+        verbose_name_plural = 'Заявки на подписку'

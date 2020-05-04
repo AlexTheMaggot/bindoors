@@ -174,6 +174,7 @@ $(document).ready(function () {
         }
         if (agr.prop('checked')) {
         } else {
+            e.preventDefault();
             $('.order__agreement').addClass('wrong_move');
             setTimeout(function () {
                 $('.order__agreement').removeClass('wrong_move');
@@ -200,6 +201,7 @@ $(document).ready(function () {
         }
         if (agr.prop('checked')) {
         } else {
+            e.preventDefault();
             $('.recall__agreement').addClass('wrong_move');
             setTimeout(function () {
                 $('.recall__agreement').removeClass('wrong_move');
@@ -218,6 +220,7 @@ $(document).ready(function () {
         }
         if (agr.prop('checked')) {
         } else {
+            e.preventDefault();
             $('.sendmail__agreement').addClass('wrong_move');
             setTimeout(function () {
                 $('.sendmail__agreement').removeClass('wrong_move');
@@ -251,6 +254,7 @@ $(document).ready(function () {
             }, 1000);
         }
         if (agr.prop('checked') == false) {
+            e.preventDefault();
             $('.quiz__agreement').addClass('wrong_move');
             setTimeout(function () {
                 $('.quiz__agreement').removeClass('wrong_move');
