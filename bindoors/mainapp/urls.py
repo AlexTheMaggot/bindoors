@@ -11,4 +11,5 @@ urlpatterns = [
     path('agreement/', views.agreement, name='agreement'),
     path('privacy/', views.privacy, name='privacy'),
     path('thank-you/', views.thank_you, name='thank-you'),
+    path('wrong/', views.wrong, name='wrong'),
 ]

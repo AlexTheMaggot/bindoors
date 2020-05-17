@@ -59,7 +59,7 @@ class Review(models.Model):
 
 class Recall(models.Model):
     name = models.CharField(verbose_name='Имя', max_length=200)
-    phone = models.CharField(verbose_name='Телефон', max_length=10)
+    phone = models.CharField(verbose_name='Телефон', max_length=200)
     date = models.DateTimeField(verbose_name='Дата', auto_now_add=True, null=True)
 
     def __str__(self):

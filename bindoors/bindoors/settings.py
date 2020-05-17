@@ -25,10 +25,9 @@ SECRET_KEY = '$87#s8xrcp^42baqoo$t+dpzxj*7g72jxt5bx*wysr=wig%*=*'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.0.103',
+    'bindoors.ru',
+    'www.bindoors.ru',
     '192.168.0.105',
-    'alexthemaggot.pythonanywhere.com',
-    'pythonanywhere.com',
 ]
 
 # Application definition
@@ -126,3 +125,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mainapp/media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/'),
 )
+
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_HOST_USER = 'no-reply@bindoors.ru'
+EMAIL_HOST_PASSWORD = 'noreply'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = 'no-reply@bindoors.ru'
+DEFAULT_TO_EMAIL = 'alexthemaggot23@gmail.com'

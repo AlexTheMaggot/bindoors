@@ -16,6 +16,9 @@
                 <a href="tel:+79775640883" class="phone">
                     <p>+7 (977) 564-08-83</p>
                 </a>
+                <a href="mailto:info@bindoors.ru" class="phone">
+                    <p>info@bindoors.ru</p>
+                </a>
                 <p class="worktime">С 10:00 до 20:00</p>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
@@ -26,7 +29,7 @@
                         <a href="https://wa.me/79775640883" class="callback__social-item">
                             <i class="fa fa-whatsapp"></i>
                         </a>
-                        <a href="#" class="callback__social-item">
+                        <a href="https://t.me/bindoors" class="callback__social-item">
                             <i class="fa fa-telegram"></i>
                         </a>
                         <a href="https://www.instagram.com/bindoors_moscow/" class="callback__social-item">
@@ -37,8 +40,6 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -390,7 +391,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-12 d-none d-md-block">
+                            <div class="col-xl-6 col-12 projects__texts">
                                 <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>
                                     {{ p.object }}
                                 </p>
@@ -429,7 +430,7 @@
                 <form action="{% url 'sendcatandprice' %}" method="POST">
                     {% csrf_token %}
                     <input type="text" class="form-control order__input order__name" placeholder="ФИО" name="name">
-                    <input type="text" class="form-control order__input order__phone" placeholder="Телефон"
+                    <input type="tel" class="form-control order__input order__phone" placeholder="Телефон"
                            name="phone">
                     <input type="email" class="form-control order__input order__mail" placeholder="E-mail" name="mail">
                     <p class="text-center order__agreement">
@@ -535,7 +536,7 @@
                 <p class="footer__title">ПОДПИШИТЕСЬ</p>
                 <p class="footer__desc">Подпишитесь на наши социальные сети.</p>
                 <a href="https://wa.me/79775640883"><i class="fa fa-whatsapp footer__social"></i></a>
-                <a href="#"><i class="fa fa-telegram footer__social"></i></a>
+                <a href="https://t.me/bindoors"><i class="fa fa-telegram footer__social"></i></a>
                 <a href="https://www.instagram.com/bindoors_moscow/"><i class="fa fa-instagram footer__social"></i></a>
                 <a href="https://www.facebook.com/Bindoors-103749881323699"><i
                         class="fa fa-facebook footer__social"></i></a>
@@ -548,9 +549,9 @@
                     предложениях.</p>
                 <form action="{% url 'subscribe' %}" method="POST">
                     {% csrf_token %}
-                    <input type="email" name="mail">
+                    <input type="email" name="mail" placeholder="Введите E-mail" class="footer__mail">
                     <input type="submit" value="Отправить" class="footer__button">
-                    <p class="form-check-label footer__desc">
+                    <p class="form-check-label footer__desc footer__agreement">
                         <input type="checkbox">
                         Согласен с <a href="agreement/">обработкой данных</a>
                     </p>
@@ -567,7 +568,7 @@
         <form action="{% url 'recall' %}" method="POST">
             {% csrf_token %}
             <input type="text" class="form-control mod_inputs recall__name" placeholder="Имя" name="name">
-            <input type="text" class="form-control mod_inputs recall__phone"
+            <input type="tel" class="form-control mod_inputs recall__phone"
                    placeholder="+7 (495) 123-45-67 (Обязательное поле)" name="phone">
             <p class="form-check-label recall__agreement">
                 <input type="checkbox">
@@ -583,7 +584,7 @@
         <h1 class='title'>Введите E-mail</h1>
         <form action="{% url 'sendcatalog' %}" method="POST">
             {% csrf_token %}
-            <input type="text" class="mod_inputs form-control sendmail__mail" placeholder="mail@example.com"
+            <input type="email" class="mod_inputs form-control sendmail__mail" placeholder="mail@example.com"
                    name="mail">
             <p class="form-check-label sendmail__agreement">
                 <input type="checkbox">
