@@ -22,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$87#s8xrcp^42baqoo$t+dpzxj*7g72jxt5bx*wysr=wig%*=*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'bindoors.ru',
     'www.bindoors.ru',
-    '192.168.0.105',
+    '127.0.0.1',
 ]
 
 # Application definition

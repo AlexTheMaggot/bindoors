@@ -93,6 +93,7 @@
 header .logo {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0 auto 30px auto;
 }
 header .logo__img {
@@ -102,6 +103,7 @@ header .phone {
   display: block;
   margin: -8px auto 0 auto;
   width: fit-content;
+  width: -moz-fit-content;
   font-size: 1.2rem;
   font-weight: 600;
   color: #000000;
@@ -116,6 +118,7 @@ header .worktime {
 }
 header .callback {
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0 auto 0 auto;
 }
 header .callback__button {
@@ -152,6 +155,7 @@ header .callback__social-item:hover {
 }
 .menu__nav {
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0 auto;
 }
 .menu__ul {
@@ -256,6 +260,7 @@ header .callback__social-item:hover {
 .about__button {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 20px auto 0 auto;
   color: #FFFFFF;
   background-color: #000000;
@@ -320,6 +325,7 @@ header .callback__social-item:hover {
 .quiz__prev {
   display: inline-block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 10px auto 0 auto;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
@@ -484,6 +490,7 @@ header .callback__social-item:hover {
 .projects__text {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin-left: 30px;
   margin-right: 0;
   margin-bottom: 0;
@@ -539,6 +546,7 @@ header .callback__social-item:hover {
 .projects__button {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 20px auto 0 auto;
   color: #FFFFFF;
   background-color: #68952D;
@@ -552,8 +560,8 @@ header .callback__social-item:hover {
 }
 .projects .slick-arrow {
   position: absolute;
-  top: 16vw;
-  margin-top: 0;
+  top: 50%;
+  margin-top: -15px;
   font-size: 0;
   width: 30px;
   height: 30px;
@@ -598,19 +606,14 @@ header .callback__social-item:hover {
 .projects .slick-dots li button:focus {
   outline: none;
 }
-@media (min-width: 576px) {
-  .projects .slick-arrow {
-    top: 17vw;
-  }
-}
 @media (min-width: 768px) {
   .projects .slick-arrow {
-    top: 19vw;
+    top: 28%;
   }
 }
 @media (min-width: 992px) {
   .projects .slick-arrow {
-    top: 21vw;
+    top: 32%;
   }
 }
 @media (min-width: 1200px) {
@@ -618,7 +621,6 @@ header .callback__social-item:hover {
     margin-top: 0;
   }
   .projects .slick-arrow {
-    margin-top: -15px;
     top: 50%;
   }
   .projects__text {
@@ -640,10 +642,12 @@ header .callback__social-item:hover {
 .order__agreement {
   margin: 0 auto;
   width: fit-content;
+  width: -moz-fit-content;
 }
 .order__button {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 20px auto 0 auto;
   color: #FFFFFF;
   background-color: #68952D;
@@ -696,6 +700,7 @@ header .callback__social-item:hover {
 .reviews__button {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 20px auto 0 auto;
   color: #FFFFFF;
   background-color: #000000;
@@ -870,6 +875,7 @@ header .callback__social-item:hover {
 .footer__phone {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin-top: 10px;
   color: #AAAAAA;
 }

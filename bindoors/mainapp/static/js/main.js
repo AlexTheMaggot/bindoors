@@ -49,8 +49,22 @@ $(document).ready(function () {
         const destination = $(elementClick).offset().top;
         $('html').animate({scrollTop: destination}, 1000);
     });
-    $('.quiz__next').on('click', function () {
-
+    $('.quiz__next').on('click', function (e) {
+        let $this = $(this),
+            quiz = $($this).data("quiz");
+        setTimeout(function () {
+            $('.quiz__step').css('opacity', '0');
+        }, 300);
+        setTimeout(function () {
+            $('.quiz__step').css('display', 'none');
+            $(quiz).css('display', 'block');
+        }, 600);
+        setTimeout(function () {
+            $(quiz).css('opacity', '1');
+        }, 900);
+    });
+    $('.quiz__prev').on('click', function (e) {
+        e.preventDefault();
         let $this = $(this),
             quiz = $($this).data("quiz");
         setTimeout(function () {

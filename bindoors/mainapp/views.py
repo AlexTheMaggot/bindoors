@@ -143,5 +143,10 @@ def privacy(request):
 def thank_you(request):
     return render(request, 'mainapp/thank-you.html')
 
+
 def wrong(request):
     return render(request, 'mainapp/wrong.html')
+
+
+def custom_404(request, exception):
+    return render(request, "mainapp/404.html")
