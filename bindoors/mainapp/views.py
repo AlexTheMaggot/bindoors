@@ -39,7 +39,7 @@ class RecallView(View):
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
                 bot.send_message(-1001204503517, message)
-                return redirect('/thank-you')
+                return redirect('/recall/thank-you')
         return redirect('/wrong')
 
 
@@ -58,7 +58,7 @@ class SendCatalogView(View):
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
                 bot.send_message(-1001204503517, message)
-                return redirect('/thank-you')
+                return redirect('/send-catalog/thank-you')
         return redirect('/wrong')
 
 
@@ -80,7 +80,7 @@ class SendCatandpriceView(View):
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
                 bot.send_message(-1001204503517, message)
 
-                return redirect('/thank-you')
+                return redirect('/send-catalog-price/thank-you')
         return redirect('/wrong')
 
 
@@ -110,7 +110,7 @@ class QuizView(View):
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
                 bot.send_message(-1001204503517, message)
 
-                return redirect('/thank-you')
+                return redirect('/quiz/thank-you')
         return redirect('/wrong')
 
 
@@ -128,7 +128,7 @@ class SubscribeView(View):
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
                 bot.send_message(-1001204503517, message)
-                return redirect('/thank-you')
+                return redirect('/subscribe/thank-you')
         return redirect('/wrong')
 
 

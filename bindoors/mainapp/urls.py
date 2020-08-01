@@ -10,6 +10,10 @@ urlpatterns = [
     path('subscribe/', views.SubscribeView.as_view(), name='subscribe'),
     path('agreement/', views.agreement, name='agreement'),
     path('privacy/', views.privacy, name='privacy'),
-    path('thank-you/', views.thank_you, name='thank-you'),
+    path('send-catalog/thank-you/', views.thank_you, name='send-catalog-thank-you'),
+    path('send-catalog-price/thank-you/', views.thank_you, name='send-catalog-price-thank-you'),
+    path('quiz/thank-you/', views.thank_you, name='quiz-thank-you'),
+    path('subscribe/thank-you/', views.thank_you, name='subscribe-thank-you'),
+    path('recall/thank-you/', views.thank_you, name='recall-thank-you'),
     path('wrong/', views.wrong, name='wrong'),
 ]
