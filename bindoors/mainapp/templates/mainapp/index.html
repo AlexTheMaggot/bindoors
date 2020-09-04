@@ -11,6 +11,7 @@
                 <a href="/" class="logo">
                     <img class="logo__img" src="{% static 'img/logo.svg' %}" alt="">
                 </a>
+                <a href="#" class="btn discount open-modal_modal" data-modal_modal="#modal_modal3">Скидка 5%</a>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
                 <a href="tel:+79775640883" class="phone">
@@ -100,7 +101,7 @@
                             <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6 col-6">
                                 <div class="about__feature">
                                     <img src="{% static 'img/warranty.png' %}" alt="" class="about__feature-img">
-                                    <p class="about__feature-desc">Гарантия качества</p>
+                                    <p class="about__feature-desc">Гарантия 6 месяцев</p>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6 col-6">
@@ -130,16 +131,16 @@
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__1 quiz__step">
                     <input type="radio" name="door_type" class="quiz__input" id="entrance" value="Входные">
-                    <label for="entrance" class="quiz__label quiz__next" data-quiz=".quiz__2">
+                    <label for="entrance" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/indoor.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Входные</p>
+                        <p class="quiz__item">Входные (от 6100 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__1 quiz__step">
                     <input type="radio" name="door_type" class="quiz__input" id="room" value="Межкомнатные">
                     <label for="room" class="quiz__label quiz__next" data-quiz=".quiz__2">
                         <img src="{% static 'img/room.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Межкомнатные</p>
+                        <p class="quiz__item">Межкомнатные (от 2170 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__1 quiz__step">
@@ -157,28 +158,28 @@
                     <input type="radio" name="price_type" class="quiz__input" id="economy" value="Эконом">
                     <label for="economy" class="quiz__label quiz__next" data-quiz=".quiz__3">
                         <img src="{% static 'img/econom.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Эконом</p>
+                        <p class="quiz__item">Эконом (от 2170 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__2 quiz__step">
                     <input type="radio" name="price_type" class="quiz__input" id="standard" value="Стандарт">
                     <label for="standard" class="quiz__label quiz__next" data-quiz=".quiz__3">
                         <img src="{% static 'img/standart.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Стандарт</p>
+                        <p class="quiz__item">Стандарт (от 6765 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__2 quiz__step">
                     <input type="radio" name="price_type" class="quiz__input" id="business" value="Бизнес">
                     <label for="business" class="quiz__label quiz__next" data-quiz=".quiz__3">
                         <img src="{% static 'img/business.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Бизнес</p>
+                        <p class="quiz__item">Бизнес (от 8250 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__2 quiz__step">
                     <input type="radio" name="price_type" class="quiz__input" id="premium" value="Премиум">
                     <label for="premium" class="quiz__label quiz__next" data-quiz=".quiz__3">
                         <img src="{% static 'img/premium.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Премиум</p>
+                        <p class="quiz__item">Премиум (от 10560 руб.)</p>
                     </label>
                 </div>
                 <div class="col-12 quiz__2 quiz__step">
@@ -191,35 +192,35 @@
                     <input type="radio" name="style_type" class="quiz__input" id="classic" value="Классические">
                     <label for="classic" class="quiz__label quiz__next" data-quiz=".quiz__4">
                         <img src="{% static 'img/classic.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Классические</p>
+                        <p class="quiz__item">Классические (от 6765 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__3 quiz__step">
                     <input type="radio" name="style_type" class="quiz__input" id="modern" value="Модерн">
                     <label for="modern" class="quiz__label quiz__next" data-quiz=".quiz__4">
                         <img src="{% static 'img/modern.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Модерн</p>
+                        <p class="quiz__item">Модерн (от 7675 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__3 quiz__step">
                     <input type="radio" name="style_type" class="quiz__input" id="highttech" value="Хай-тек">
                     <label for="highttech" class="quiz__label quiz__next" data-quiz=".quiz__4">
                         <img src="{% static 'img/hightech.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Хай-тек</p>
+                        <p class="quiz__item">Хай-тек (от 7425 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__3 quiz__step">
                     <input type="radio" name="style_type" class="quiz__input" id="country" value="Кантри">
                     <label for="country" class="quiz__label quiz__next" data-quiz=".quiz__4">
                         <img src="{% static 'img/country.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Кантри</p>
+                        <p class="quiz__item">Кантри (от 2170 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__3 quiz__step">
                     <input type="radio" name="style_type" class="quiz__input" id="scandinavian" value="Скандинавские">
                     <label for="scandinavian" class="quiz__label quiz__next" data-quiz=".quiz__4">
                         <img src="{% static 'img/scandinavian.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Скандинавский</p>
+                        <p class="quiz__item">Скандинавский (от 2170 руб.)</p>
                     </label>
                 </div>
                 <div class="col-12 quiz__3 quiz__step">
@@ -255,42 +256,42 @@
                     <input type="radio" name="material_type" class="quiz__input" id="MDF" value="МДФ">
                     <label for="MDF" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/mdf.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">МДФ</p>
+                        <p class="quiz__item">МДФ (от 2700 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__5 quiz__step">
                     <input type="radio" name="material_type" class="quiz__input" id="wood" value="Дерево">
                     <label for="wood" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/wood.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Дерево</p>
+                        <p class="quiz__item">Дерево (от 3400 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__5 quiz__step">
                     <input type="radio" name="material_type" class="quiz__input" id="glass" value="Стекло">
                     <label for="glass" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/glass.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Стекло</p>
+                        <p class="quiz__item">Стекло (от 6170 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__5 quiz__step">
                     <input type="radio" name="material_type" class="quiz__input" id="veneer" value="Шпон">
                     <label for="veneer" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/veneer.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Шпон</p>
+                        <p class="quiz__item">Шпон (от 3810 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__5 quiz__step">
                     <input type="radio" name="material_type" class="quiz__input" id="ecoveneer" value="Экошпон">
                     <label for="ecoveneer" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/ecoveneer.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Экошпон</p>
+                        <p class="quiz__item">Экошпон (от 2170 руб.)</p>
                     </label>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 quiz__5 quiz__step">
                     <input type="radio" name="material_type" class="quiz__input" id="enamel" value="Эмаль">
                     <label for="enamel" class="quiz__label quiz__next" data-quiz=".quiz__6">
                         <img src="{% static 'img/enamel.jpg' %}" alt="" class="quiz__img">
-                        <p class="quiz__item">Эмаль</p>
+                        <p class="quiz__item">Эмаль (от 4530 руб.)</p>
                     </label>
                 </div>
                 <div class="col-12 quiz__5 quiz__step">
@@ -595,6 +596,12 @@
             <input type="submit" class='button_send sendmail__send btn'>
             <a class='button_cancel close-modal_modal btn' data-modal_modal="#modal_modal2" href="#">Отмена</a>
         </form>
+    </div>
+</div>
+<div class='modal_modal' id='modal_modal3'>
+    <div class='content'>
+        <h1 class='title'>При заказе от 5 дверей вы получаете скидку 5%</h1>
+        <a class='button_cancel close-modal_modal btn' data-modal_modal="#modal_modal3" href="#">Понятно</a>
     </div>
 </div>
 {% for p in projects %}
