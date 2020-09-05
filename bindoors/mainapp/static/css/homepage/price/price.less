@@ -1,0 +1,28 @@
+.price {
+	&__table {
+      width: 100%;
+      border-collapse: separate;
+	}
+    &__tbody {
+      border-radius: 30px;
+      border: 3px solid @orange;
+    }
+	&__tr {
+      width: 100%;
+      &_main {
+        background: #A2C26A;
+      }
+      &_odd {
+        background: #DAE7C3;
+      }
+      &_even {
+        background: #E7F2CE;
+      }
+	}
+	&__td {
+      padding: 5px 20px;
+      &_head {
+        font-weight: 600;
+      }
+	}
+}

@@ -1,0 +1,15 @@
+.price__table {
+  width: 100%;
+}
+.price__tr {
+  width: 100%;
+}
+.price__td_left {
+  width: 70%;
+  text-align-last: left;
+}
+.price__td_right {
+  width: 30%;
+  text-align: right;
+}
+/*# sourceMappingURL=price.css.map */

@@ -677,6 +677,32 @@ header .callback__social-item:hover {
   background-color: #3D610F;
   color: #FFFFFF;
 }
+.price__table {
+  width: 100%;
+  border-collapse: separate;
+}
+.price__tbody {
+  border-radius: 30px;
+  border: 3px solid #ED9121;
+}
+.price__tr {
+  width: 100%;
+}
+.price__tr_main {
+  background: #A2C26A;
+}
+.price__tr_odd {
+  background: #DAE7C3;
+}
+.price__tr_even {
+  background: #E7F2CE;
+}
+.price__td {
+  padding: 5px 20px;
+}
+.price__td_head {
+  font-weight: 600;
+}
 .reviews {
   background-color: #68952D;
 }
