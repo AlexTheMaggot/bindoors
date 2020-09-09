@@ -703,6 +703,21 @@ header .callback__social-item:hover {
 .price__td_head {
   font-weight: 600;
 }
+.price__button {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: 20px auto 0 auto;
+  color: #FFFFFF;
+  background-color: #68952D;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.price__button:hover {
+  text-decoration: none;
+  background-color: #3D610F;
+  color: #FFFFFF;
+}
 .reviews {
   background-color: #68952D;
 }
